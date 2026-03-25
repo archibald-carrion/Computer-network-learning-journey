@@ -3,6 +3,7 @@
 Distinguish between application types by analyzing flow statistics and packet size distribution in a mixed-traffic environment.
 
 1. The 'Conversations' Snapshot
+
     1. Open mixed_traffic.pcap and navigate to Statistics -> Conversations -> TCP.
     ```json
     [
@@ -53,6 +54,7 @@ Distinguish between application types by analyzing flow statistics and packet si
         Stream 1 30kB, 23packets -> ~1300bytes per packet
 
 2. Packet Size Distribution
+
     4. Navigate to Statistics -> Packet Lengths.
         
         ==================================================================================================================================
@@ -82,11 +84,13 @@ Distinguish between application types by analyzing flow statistics and packet si
     6. Why does the 'Chat' application result in significantly smaller (control) overhead compared to the 'Video' stream?
         I did not find direct explanation for this, but I would say that it is related to not loosing data and as the video stream as more packet and bigger packet then there is more risk to have integrity problem, therefor it meeds more controls to keep the strem reliable
 
-
 3. Throughput & I/O Graphs
+
     7. Open Statistics -> I/O Graphs. Create filters for 'tcp.port == 80' and 'tcp.port == 8080'.
         ![I/O graphs](image.png)
+
     8. Set the Y-Axis to 'Bits/Sec'. What is the peak throughput of each stream?
         for port 80 it is like 2.8kB, for 8080 more like 241kB
+
     9. If you were to apply a Machine Learning model to classify these flows, which three statistical features would be most reliable for identification?
         Naturally I would say the packet size and frecuency, but that could potentialy instead be a factor which create a bias to the model as they may be 2factors way too prominent, ratio of send/received could also be an interesting factor
