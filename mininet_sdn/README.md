@@ -1,0 +1,25 @@
+# ultra basic ML based SDNM 
+
+The objective of this small project is to build a model whjich is able to detect and block network flows that contain a higher-than-expected volume of data. For example, a standard ping running between two nodes (Node A and Node B) should not cause any issues and the traffic should be allowed. However, if a node attempts a ping flood—sending many simultaneous packets—then that connection must be blocked.
+
+The steps to take are:
+1. **Train a model** (any model of choice) using the dataset provided (flow_Dataset.csv). This dataset includes both normal-volume and high-volume traffic.
+2. **Export** the trained model.
+3. **Import** the model into a POX controller module that extracts flow statistics from a switch and handles the feature extraction.
+
+
+### Deliverables
+
+You must submit a **single PDF** including the following:
+
+* An explanation of what had to be added to the code to achieve the required functionality.
+* A screenshot of the new code (it is not necessary to show the entire file).
+* A screenshot proving that the traffic is successfully being blocked.
+
+
+
+the dataset is a training dataset for the ml model
+
+after generating it i should use the given ml_traffic_detector_hints.py to filter ping (dos simulation in this scenario) in mininet
+
+first you will need to follow the previous tutorial to setup mininet and pox in you environment
