@@ -8,6 +8,26 @@ The steps to take are:
 3. **Import** the model into a POX controller module that extracts flow statistics from a switch and handles the feature extraction.
 
 
+
+Once the model build with python basic_decision_Tree.py or any other model you whish to make, just move ml_traffic_DEtector_hints.py and your .pkl to /pox/ext
+
+pox/
+├── pox.py
+├── ext/
+│   ├── ml_detector.py
+│   └── traffic_model.pkl
+├── pox/
+├── tests/
+└── ...
+
+
+
+do this to check if pox recognigze it:
+./pox.py log.level --DEBUG ml_detector
+
+
+
+
 ### Deliverables
 
 You must submit a **single PDF** including the following:
