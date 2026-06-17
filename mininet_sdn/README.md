@@ -21,11 +21,22 @@ pox/
 └── ...
 
 
+python3 -m venv .venv
+source .venv/bin/activate
 
-do this to check if pox recognigze it:
-./pox.py log.level --DEBUG ml_detector
+first spin up pox:
+./pox.py forwarding.l2_learning ml_traffic_detector_hints
 
 
+andi n another terminal spin up mininet:
+
+
+
+to test:
+h2 iperf -s &
+h1 iperf -c 10.0.0.2 --> this one also did large average size which triggered my first tree
+h1 ping -s 1472 -i 0.001 h2 --> to try packets with a flow with a high er packets average size (this one happened to be the one detected with my first tree)
+ h1 ping -f h2 --> to try high frequence little packets 
 
 
 ### Deliverables
