@@ -96,8 +96,8 @@ control MyIngress(inout headers hdr,
         bit<1> high_rate;
         bit<1> large_avg;
 
-        /* Rate: (count * 1000) > (700 * duration) */
-        if ((count * 1000) > (700 * (bit<32>)duration)) {
+        /* Rate: count/duration > 700 pkt/s  --> count * 1_000_000 > 700 * duration */
+        if (((bit<64>)count * 1000000) > (700 * (bit<64>)duration)) {
             high_rate = 1;
         } else {
             high_rate = 0;
