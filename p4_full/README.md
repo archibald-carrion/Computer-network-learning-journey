@@ -11,3 +11,6 @@ Run with: make run
 
 Description:
 Stateful P4 program computing traffic features and classifying flows.
+
+
+In the final version i ended up changin 700 by 150 to get better results
