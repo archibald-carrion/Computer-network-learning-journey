@@ -14,7 +14,6 @@ This repository is a **work in progress**, and I plan to add more content, proje
 
 This repository contains a variety of projects, each focusing on different aspects of computer networking:
 
-- **flow_classifier**: A project for classifying network flows, including scripts and documentation for understanding and implementing flow classification techniques.
 - **mininet_basic_tutorial**: A beginner-friendly tutorial for Mininet, covering basic network emulation and SDN (Software-Defined Networking) concepts.
 - **mininet_sdn**: Advanced Mininet projects focusing on SDN, including custom topologies, OpenFlow controllers, and network slicing.
 - **p4_full**: Projects and experiments using the P4 programming language for data plane programming, including custom switches and network functions.
@@ -27,7 +26,6 @@ This repository contains a variety of projects, each focusing on different aspec
 
 ```plaintext
 Computer-network-learning-journey/
-├── flow_classifier/
 ├── mininet_basic_tutorial/
 ├── mininet_sdn/
 ├── p4_full/
