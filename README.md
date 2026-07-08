@@ -41,20 +41,10 @@ Computer-network-learning-journey/
 ## 🔗 Related Projects
 
 For more advanced or related projects, check out:
+- [IoT Interpretable Flow Classification](https://github.com/archibald-carrion/IoT-interpretable-flow-classification): The main project from the same class, focusing on interpretable flow classification for IoT networks.
 - [Machine Learning and AI Journey](https://github.com/archibald-carrion/Machine-learning-course): A collection of machine learning and AI experiments, including neural networks, RAGs, and predictive analysis.
 - [Convolutional Neural Network for Sound Classification](https://github.com/archibald-carrion/Convolutional-neural-networks-sound-classification): A project for detecting ambulance sounds using CNNs.
 - [Smart Decompiler](https://github.com/archibald-carrion/decompiler): A tool for decompiling X86 assembly code into readable C code.
-
----
-
-## 🛠️ Getting Started
-
-To explore or contribute to this repository:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/archibald-carrion/Computer-network-learning-journey.git
-   ```
-2. Navigate to the project folder of interest and follow the instructions in the respective `README.md` files.
 
 ---
 
